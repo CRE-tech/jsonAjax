@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Ajax Practice</title>
+</head>
+<body>
+	<h1>jQuery Ajax Practice</h1>
+
+	<h2>Food Orders</h2>
+	<ul id="orders">
+	</ul>
+
+	<h4>Add another Food Order</h4>
+	<p>name: <input type="text" id="name" name=""></p>
+	<p>food: <input type="text" id="food" name=""></p>
+	<button id="add-food">Add!</button>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/javascripts/script.js"></script>
+</body>
+</html>
