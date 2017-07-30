@@ -15,8 +15,7 @@
 	<p>food: <input type="text" id="food" name=""></p>
 	<button id="add-food">Add!</button>
 
-	<p>ok
-	</p>
+	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/javascripts/script.js"></script>
 </body>
