@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
   	message: 'info'
    });
 });
-
+ 
 //*************  USE THE FOLLOWING CODE WHEN UPLOAD WITHOUT IMAGE ********
 
 // router.post('/', function(req, res, next) {
