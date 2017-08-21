@@ -2,22 +2,48 @@
 <html>
 <head>
 	<title>jQuery Ajax Practice</title>
+	<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.ckeditor.com/4.7.1/basic/ckeditor.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
-	<h1>jQuery Ajax Practice</h1>
+	<form action="/" method="post" enctype="multipart/form-data">
+		<label class="titleLabel">標題： </label>
+		<div class="titleDiv">
+			<input type="text" class="titleInput" name="title">
+		</div>
 
-	<h2>Food Orders</h2>
-	<ul id="orders">
-	</ul>
+		<br>
+		<br>
 
-	<h4>Add another Food Order</h4>
-	<p>name: <input type="text" id="name" name=""></p>
-	<p>food: <input type="text" id="food" name=""></p>
-	<button id="add-food">Add!</button>
+		<label class="contentLabel">文章內容： </label>
+		<div class="contentDiv">
+			<textarea class="contentText" name="content" id="editor1" rows="10" cols="80"">
+        	</textarea>
+		</div>
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace( 'content', {
+            	language: 'zh-cn',
+            } );
 
-	<p>ok
-	</p>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        </script>
+
+        <br>
+        <br>
+
+        <label class="imageLabel">圖片上傳： </label>
+		<input type="file" name="imageFile">
+
+		<br>
+		<br>
+
+		<button type="submit">發布</button>
+	</form>
+
 	<script type="text/javascript" src="/javascripts/script.js"></script>
 </body>
+
 </html>

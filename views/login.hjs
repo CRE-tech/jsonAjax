@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> {{title}} </title>
+</head>
+<body>
+	{{title}}
+	<br>
+	<br>
+	<form action="/login" method="post">
+		<label>email</label>
+		<br>
+		<input type="email" name="email">
+
+		<br>
+		<br>
+
+		<label>password</label>
+		<br>
+		<input type="password" name="password">
+
+		<br>
+		<br>
+
+		<button type="submit">submit</button>
+	</form>
+
+	{{#showErrors}}
+	<ul>
+		{{#errors}}
+			<li>{{.}}</li>
+		{{/errors}}
+	</ul>
+	{{/showErrors}}
+</body>
+</html>

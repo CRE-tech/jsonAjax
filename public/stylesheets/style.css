@@ -1,8 +1,20 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.titleLabel, .contentLabel, .imageLabel{
+	display: inline-block;	
+	width: 10vw;
 }
 
-a {
-  color: #00B7FF;
+.contentLabel {
+	vertical-align: top;
+}
+
+.titleDiv, .contentDiv{
+	display: inline-block;
+	width: 50vw;
+	align-content: top;
+}
+
+
+
+.titleInput, .contentText{
+	width: 100%;
 }

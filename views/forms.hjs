@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Ajax Practice</title>
+	<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.ckeditor.com/4.7.1/basic/ckeditor.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+	<div class="titleForm">
+		
+	</div>
+
+	<br>
+	<br>
+
+	<div class="contentForm">
+		
+	</div>
+
+	<br>
+	<br>
+
+	<div class="">
+		
+	</div>
+	
+	<script src="http://malsup.github.com/jquery.form.js"></script> 
+	<script type="text/javascript" src="/javascripts/script.js"></script>
+</body>
+</html>

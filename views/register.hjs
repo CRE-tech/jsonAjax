@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	{{ title}}
+	<br>
+	<br>
+	<form action="/register" method="post">
+		<label>email</label>
+		<br>
+		<input type="email" name="email" id="reg_email" onblur="checkEmpty('register_email')">
+		<!-- required attribute doesn't work on safari -->
+		<br>
+		<br>
+
+		<label>password</label>
+		<br>
+		<input type="password" name="password" id="reg_password">
+
+		<br>
+		<br>
+
+		<label>repeat password</label>
+		<br>
+		<input type="password" name="password2" id=" reg_password2"  autocomplete="on">
+
+		<br>
+		<br>
+
+		<button type="submit">Sign Up</button>
+	</form>
+
+	{{#showErrors}}
+	<ul class="errors">
+		{{#errors}}
+		<li>{{.}}</li>
+		{{/errors}}
+	</ul>
+	{{/showErrors}}
+	<!-- <script type="text/javascript" src="/javascripts/script.js"></script> -->
+</body>
+</html>
