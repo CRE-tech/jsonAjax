@@ -5,9 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require("multer");
-var flash = require("express-flash-messages")
+var flash = require("express-flash-messages");
 var session = require("express-session");
-var passport = require("passport"); 
+var passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
 
 
